@@ -1,5 +1,5 @@
 {
-  "name": "pittis_soraya_pao_allison_hw3",
+  "name": "pittis_soraya_pao_allison_flomen_jaclyn_hw3",
   "version": "1.0.0",
   "description": "Automobile Application",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spittis/pittis_soraya_pao_allison_hw3.git"
+    "url": "git+https://github.com/spittis/pittis_soraya_pao_allison_flomen_jaclyn_hw3.git"
   },
   "keywords": [
     "auto",
@@ -16,10 +16,10 @@
     "application",
     "car"
   ],
-  "author": "Soraya Pittis and Allison Pao",
+  "author": "Soraya Pittis and Allison Pao and Jaclyn Flomen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spittis/pittis_soraya_pao_allison_hw3/issues"
+    "url": "https://github.com/spittis/pittis_soraya_pao_allison_flomen_jaclyn_hw3/issues"
   },
   "homepage": "https://github.com/spittis/pittis_soraya_pao_allison_hw3#readme",
   "dependencies": {
