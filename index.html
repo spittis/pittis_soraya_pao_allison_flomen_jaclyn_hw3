@@ -11,21 +11,30 @@
 
     <main id="app">
 
-            <h3>{{ message }}</h3>
+            <h3>Explore Our Key Features</h3>
 
-            <ul>
-                    <li v-for="car in cardata">
-                        <button v-on:click="fetchSingle" :data-movie="tbl_features.movies_id"></button>
-                        <a :href="tbl_features.movies_path" v-on:click="loadMovie">
-                            <img :src="'images/' + tbl_features.movies_thumb" alt="movie poster">
-                        </a>
-                        <p>Put genre data here</p>
-                    </li>
-                </ul>
-        
-                <p class="instructions">
-                    <i>Click on a poster to preview the movie!</i>
-                </p>
+            <div class="SVG" id="1">
+                <p data-offset="0">1</p>
+            </div>
+
+            <div class="SVG" id="2">
+                <p data-offset="1">2</p>
+            </div>
+
+            <div class="SVG" id="3">
+                <p data-offset="2">3</p>
+            </div>
+
+            <div class="SVG" id="4">
+                <p data-offset="3">4</p>
+            </div>
+            
+            <div class="SVG" id="5">
+                <p data-offset="4">5</p>
+            </div>
+
+            <h5 class="title1">-</h5>
+            <p class="info1">-</p>
 
     </main>
     
