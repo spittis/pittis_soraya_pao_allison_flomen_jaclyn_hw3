@@ -13,7 +13,20 @@
 
             <h3>{{ message }}</h3>
 
-            
+            <ul>
+                    <li v-for="car in cardata">
+                        <button v-on:click="fetchSingle" :data-movie="tbl_features.movies_id"></button>
+                        <a :href="tbl_features.movies_path" v-on:click="loadMovie">
+                            <img :src="'images/' + tbl_features.movies_thumb" alt="movie poster">
+                        </a>
+                        <p>Put genre data here</p>
+                    </li>
+                </ul>
+        
+                <p class="instructions">
+                    <i>Click on a poster to preview the movie!</i>
+                </p>
+
     </main>
     
     <script src="js/main.js"></script>
