@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 02, 2018 at 06:32 PM
+-- Generation Time: Dec 02, 2018 at 07:08 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.8
 
@@ -19,6 +19,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_auto_app`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_facts`
+--
+
+CREATE TABLE `tbl_facts` (
+  `facts_id` int(10) NOT NULL,
+  `facts_category` varchar(20) NOT NULL,
+  `facts_header` varchar(70) NOT NULL,
+  `facts_subheader` varchar(100) NOT NULL,
+  `facts_body` varchar(400) NOT NULL,
+  `facts_img` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_facts`
+--
+
+INSERT INTO `tbl_facts` (`facts_id`, `facts_category`, `facts_header`, `facts_subheader`, `facts_body`, `facts_img`) VALUES
+(1, 'Design', 'Exterior', 'Eye Catching Design', 'Featuring a distinctive front grille, sleek and silent mufflers, as well as new premium LED lights, the JAZ Rover introduces a remarkable design that will leave people speechless. Its contemporary design incorporates both functionality and style to create this masterpiece.', 'left-light.jpg'),
+(2, 'Design', 'Interior', 'Sleek and Comfortable', 'Effortlessly comfortable, appointed and finished with a sleek feel. From the Italian details to the polished veneers and shark trim finishers, the interior elements emphasize the unmatched details promised by the JAZ Rover', 'interior.jpg'),
+(3, 'Technology', 'Touch Pad Pro', '', 'We are in the age of smart technologies so with the JAZ Rover, our engineers designed a smart Rover. Featuring an interactive Touch Pad Pro where the traditional console would be located, this technology provides the perfect infotainment system with capabilities such as audio control, temperature control, integrated GPS systems, and additional interactive.', 'gear.jpg'),
+(4, 'Capabilities', 'All-Wheel Drive (AWD)', '', 'The JAZ Rover takes all of your off-roading and adventure desires into consideration and is built to fulfil them all thanks to the All-Wheel Drive (AWD) capabilities. With connectivity to the Touch Pad Pro, the driver will also be notified of any uneven surfaces or be alarmed of any potential dangers.', 'orange-lights.jpg');
 
 -- --------------------------------------------------------
 
@@ -47,6 +72,12 @@ INSERT INTO `tbl_features` (`features_ID`, `features_title`, `features_info`, `f
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tbl_facts`
+--
+ALTER TABLE `tbl_facts`
+  ADD PRIMARY KEY (`facts_id`);
 
 --
 -- Indexes for table `tbl_features`
