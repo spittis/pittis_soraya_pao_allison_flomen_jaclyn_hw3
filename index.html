@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>Auto App</title>
 </head>
 <body>
@@ -35,6 +36,21 @@
 
             <h5 class="title1">-</h5>
             <p class="info1">-</p>
+
+
+                
+            <ul>
+                <li v-for="cars in cardata" class="moreFeatures">
+                        <button v-on:click="fetchSingle" :data-movie="tbl_facts.facts_id" class="more-details">See More...</button>
+                    <a :href="tbl_facts.facts_img" v-on:click="loadCar">
+                        <img :src="'images/' + tbl_facts.facts_img" alt="car img">
+                    </a>
+                    <h3>{{ categoryTitle }}</h3>  <!-- Design, Capabilities, etc -->
+                    <p>{{ sectionTitle }}</p>
+                    <p>{{ subHeading }}</p>
+                    <p>{{ sectionBody }}</p>
+                </li>
+            </ul>
 
     </main>
     
