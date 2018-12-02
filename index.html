@@ -37,12 +37,18 @@
             <p class="info1">-</p>
 
 
-            <div class="moreFeatures">
-                <h3>{{ categoryTitle }}</h3>  <!-- Design, Capabilities, etc -->
-                <p>{{ sectionTitle }}</p>
-                <p>{{ subHeading }}</p>
-                <p>{{ sectionBody }}</p>
-            </div>
+                
+            <ul>
+                <li v-for="cars in cardata" class="moreFeatures">
+                    <a :href="tbl_features.features_img" v-on:click="loadCar">
+                        <img :src="'images/' + tbl_features.features_img" alt="car img">
+                    </a>
+                    <h3>{{ categoryTitle }}</h3>  <!-- Design, Capabilities, etc -->
+                    <p>{{ sectionTitle }}</p>
+                    <p>{{ subHeading }}</p>
+                    <p>{{ sectionBody }}</p>
+                </li>
+            </ul>
 
     </main>
     
