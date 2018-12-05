@@ -29,23 +29,6 @@ if (isset($_GET["features_ID"])) {
     echo json_encode($rows);
 }
 
-//get one item from database
-if (isset($_GET["facts_id"])) {
-    $facts = $_GET["facts_id"];
-
-    $myQuery = "SELECT * FROM tbl_facts WHERE facts_id='$details'";
-
-    $result = mysqli_query($conn, $myQuery);
-    $rows = array();
-
-    //fill the array with the result set and send it to the browser
-    while($row = mysqli_fetch_assoc($result)) {
-        $rows[] = $row;
-    }
-
-    echo json_encode($rows);
-}
-
 ?>
 
 
